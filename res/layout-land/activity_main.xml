@@ -23,12 +23,12 @@
             android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:background="@drawable/pantalla"
-            android:gravity="center_vertical"
             android:padding="6dp"
             android:shadowColor="#A8A8A8"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
+            android:text="25"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#000000"
             android:textSize="30sp"
@@ -48,9 +48,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_margin="1dp"
-            android:layout_weight="2.93"
+            android:layout_weight="3.3"
             android:background="@drawable/pantalla"
-            android:gravity="center_vertical"
             android:padding="6dp"
             android:shadowColor="#A8A8A8"
             android:shadowDx="0"
@@ -62,13 +61,30 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/botoBorra"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/botoborra"
+            android:minWidth="0dp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="C"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
             android:id="@+id/botoIgual"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/botoigual"
+            android:minWidth="0dp"
             android:shadowColor="#A8A8A8"
             android:shadowDx="0"
             android:shadowDy="0"
@@ -147,6 +163,21 @@
             android:text="+"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/botoResta"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/botooperador"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
     </TableRow>
 
     <TableRow
@@ -204,10 +235,9 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/botoResta"
+            android:id="@+id/botoMultiplica"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/botooperador"
@@ -215,7 +245,23 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
-            android:text="-"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/botoDividir"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/botooperador"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="/"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
     </TableRow>
@@ -275,34 +321,9 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/botoMultiplica"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/botooperador"
-            android:shadowColor="#A8A8A8"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="x"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow6"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1" >
-
-        <Button
             android:id="@+id/boto0"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/botonum"
@@ -318,7 +339,6 @@
             android:id="@+id/botoPunt"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:background="@drawable/botonum"
@@ -327,38 +347,6 @@
             android:shadowDy="0"
             android:shadowRadius="5"
             android:text="."
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/botoBorra"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/botoborra"
-            android:shadowColor="#A8A8A8"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="C"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
-
-        <Button
-            android:id="@+id/botoDividir"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_vertical"
-            android:layout_margin="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/botooperador"
-            android:shadowColor="#A8A8A8"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="5"
-            android:text="/"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
     </TableRow>
